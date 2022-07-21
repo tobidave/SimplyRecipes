@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <title>Contact</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-center">
+            <div class="nav-header">
+                <a href="./index.html" class="nav-logo">
+                    <!-- <h3>Simply <span class="logo"> Recipes </span></h3> -->
+                    <img src="./assets/logo2.png" alt="simply recipes">
+                </a>
+
+                <button type="button" class="btn nav-btn" >
+                    x
+                </button>
+            </div>
+            <div class="nav-links">
+                <a href="./index.html" class="nav-link"> home </a>
+                <a href="./about.html" class="nav-link"> about </a>
+                <a href="./tags.html" class="nav-link"> tags </a>
+                <a href="./recipes.html" class="nav-link"> recipes </a>
+                <div class="nav-link contact-link">
+                    <a href="./contact.html" class="btn">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="page">
+    <section class="contact-page">
+        <div class="re-group">
+            <article>
+                <h2>Want To Get In Touch ?</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt natus in libero eum nisi qui facilis tempore saepe impedit sapiente optio recusandae corrupti non asperiores quos molestiae et eligendi corporis dolores, harum sit sequi?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit asperiores cupiditate accusantium assumenda neque facilis perspiciatis quisquam labore delectus aliquam consectetur architecto pariatur a, omnis id quo minima minus commodi mollitia distinctio nesciunt tempora inventore quia eaque. Ut deserunt, voluptate alias quo perferendis quaerat neque minima commodi rerum dolores veritatis quasi, voluptatibus, natus inventore adipisci accusantium a voluptates corrupti doloremque.
+                </p>
+    
+            </article>
+
+            <div class="form">
+                <form  onsubmit="event.preventDefault() ; validateForm()">
+                    
+                    <div class="form-group">
+                        <input type="text" name="firstName" id="firstName" placeholder="First Name">
+                    </div>
+                    <p class="error"></p>
+
+                    <div class="form-group">
+                        <input type="text" name="lastname" id="lastName" placeholder="Last Name">
+                    </div>
+                    <p class="error"></p>
+
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" placeholder="Email Address">
+                    </div>
+                    <p class="error"></p>
+
+                    <div class="form-group">
+                        <textarea name="message" id="message" cols="30" rows="7" placeholder="Your Message"></textarea>
+                        <!-- <input type="password" name="password" id="password" placeholder="password"> -->
+                    </div>
+                    <p class="error"></p>
+
+                    <div class="center">
+                        <input type="submit" value="SUBMIT">
+                    </div>
+
+                   
+                </form>
+            </div>
+
+        </div>
+       
+
+
+    </section>
+    <section class="featured-recipes">
+        <h3 class="featured-title">Take a look at some awsome <span class="primary">recipes</span></h3>
+
+
+        <div class="recipes-list">
+            <a href="./singleRecipes.html" class="recipe" onclick="allNew()">
+                <img src="./assets/download6.jfif" alt="food" class="img recipe-img">
+                    <h5 class="rName">Chicken parito</h5>
+                    <p>Prep : 8 min | Cook 20-30 min</p>
+                </img>
+            </a>
+            <a href="./singleRecipes.html" class="recipe" onclick="allNew()">
+                <img src="./assets/download5.jfif" alt="food" class="img recipe-img">
+                <h5> Beans</h5>
+                <p>Prep : 6 min | Cook 30-45 min</p>
+                </img>
+            </a>
+            <a href="./singleRecipes.html" class="recipe" onclick="allNew()">
+                <img src="./assets/download7.jfif" alt="food" class="img recipe-img">
+                <h5> Home Made Pizza</h5>
+                <p>Prep : 6 min | Cook 30-45 min</p>
+                </img>
+            </a>
+           
+
+        </div>
+    </section>
+
+
+    </main>
+
+    <footer class="page-footer">
+        <p>&copy; <span id="date">2022</span> SimplyRecipes
+             by <a href="#" class="footer-link"> Ogunnowo Oluwatobi </a>
+        
+        </p>
+    </footer>
+    <script src="./js/app.js"></script>
+</body>
+</html>
